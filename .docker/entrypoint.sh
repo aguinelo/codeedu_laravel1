@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chmod -R 775 storage
+chmod -R 775 /var/www/storage
 
 composer install
 php artisan key:generate
