@@ -17,7 +17,7 @@ COPY . .
 RUN composer install \
     && php artisan key:generate \
     && php artisan cache:clear \
-    && chmod -R 7575 storage
+    && chmod -R 775 storage
 
 # prod
 FROM php:7.3.6-fpm-alpine3.9
